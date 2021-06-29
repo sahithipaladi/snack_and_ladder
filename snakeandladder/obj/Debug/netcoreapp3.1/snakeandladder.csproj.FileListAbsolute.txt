@@ -1,0 +1,13 @@
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\bin\Debug\netcoreapp3.1\snakeandladder.exe
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\bin\Debug\netcoreapp3.1\snakeandladder.deps.json
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\bin\Debug\netcoreapp3.1\snakeandladder.runtimeconfig.json
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\bin\Debug\netcoreapp3.1\snakeandladder.runtimeconfig.dev.json
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\bin\Debug\netcoreapp3.1\snakeandladder.dll
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\bin\Debug\netcoreapp3.1\snakeandladder.pdb
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\obj\Debug\netcoreapp3.1\snakeandladder.csproj.AssemblyReference.cache
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\obj\Debug\netcoreapp3.1\snakeandladder.AssemblyInfoInputs.cache
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\obj\Debug\netcoreapp3.1\snakeandladder.AssemblyInfo.cs
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\obj\Debug\netcoreapp3.1\snakeandladder.csproj.CoreCompileInputs.cache
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\obj\Debug\netcoreapp3.1\snakeandladder.dll
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\obj\Debug\netcoreapp3.1\snakeandladder.pdb
+C:\Users\Sahithi.P\source\repos\snakeandladder\snakeandladder\obj\Debug\netcoreapp3.1\snakeandladder.genruntimeconfig.cache
