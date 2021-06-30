@@ -48,7 +48,10 @@ namespace snakeandladder
 
                 // The Player then checks for a Option. They are No_Play,Ladder and Snake.
                 int player_move = Player_Move_Option(player_Roll_Dice);
-                player_Next_Position = player_position + player_move;
+                if (player_position + player_move > FINISH)
+                    player_Next_Position = player_position;
+                else
+                    player_Next_Position = player_position + player_move;
 
                 if (player_Next_Position < START)
                     player_position = START;
@@ -56,6 +59,7 @@ namespace snakeandladder
                     player_position = player_Next_Position;
             }
             Console.WriteLine("Player current position After the game is " + player_position);
+
 
 
 
