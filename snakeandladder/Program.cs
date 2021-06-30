@@ -37,40 +37,54 @@ namespace snakeandladder
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Snake and Ladder game.");
-            // player initial position
-            int player_position = 0, player_Next_Position;
+            // Number of players are created 
+            Player player1 = new Player("Player 1");
+            Player player2 = new Player("Player 2");
+            bool end_Game = false;
+            Player current_Player = player1;
 
-            int dice_roll_count = 0;
 
             //Repeats till the Player reaches the winning position 100.
-            while (player_position < FINISH)
+            while (!end_Game)
             {
                 // player rolls the dice and gets the value
                 int player_Roll_Dice = Roll_Dice();
 
                 // number of times the dice was played is counted
-                dice_roll_count++;
+                current_Player.dice_roll_count++;
 
                 // The Player then checks for a Option. They are No_Play,Ladder and Snake.
                 int player_move = Player_Move_Option(player_Roll_Dice);
-
-                if (player_position + player_move > FINISH)
-                    player_Next_Position = player_position;
+                if (current_Player.player_position + player_move == FINISH)
+                {
+                    current_Player.player_Next_Position = FINISH;
+                    end_Game = true;
+                }
+                else if (current_Player.player_position + player_move > FINISH)
+                    current_Player.player_Next_Position = current_Player.player_position;
                 else
-                    player_Next_Position = player_position + player_move;
+                    current_Player.player_Next_Position = current_Player.player_position + player_move;
 
-                if (player_Next_Position < START)
-                    player_position = START;
+                if (current_Player.player_Next_Position < START)
+                    current_Player.player_position = START;
                 else
-                    player_position = player_Next_Position;
+                    current_Player.player_position = current_Player.player_Next_Position;
 
                 // Player current position After rolling the Dice
-                Console.WriteLine("Player current position After rolling the Dice is " + player_position);
+                Console.WriteLine(current_Player.Name + " current position after rolling the Dice is " + current_Player.player_position);
+                if (!end_Game && player_move > 0)
+                    continue;
+                else
+                {
+                    if (current_Player == player1)
+                        current_Player = player2;
+                    else
+                        current_Player = player1;
+                }
             }
             Console.WriteLine();
-            Console.WriteLine("Player current position After the game is " + player_position);
-            Console.WriteLine("Total Number of Dice Roll in the game is " + dice_roll_count);
-
+            Console.WriteLine("The Winner is " + current_Player.Name);
+            Console.WriteLine("Total Number of Dice Roll in the game by " + current_Player.Name + " is " + current_Player.dice_roll_count);
 
 
         }
